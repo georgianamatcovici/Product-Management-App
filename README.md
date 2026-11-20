@@ -1,23 +1,23 @@
+## 1. Clone the repo
 
+Run in your terminal:
 
-1. Clone the repo
-
-run in your terminal:
-
+```bash
 git clone https://github.com/georgianamatcovici/Product-Management-App.git
 cd Product-Manegement-App
+```
 
-2.Import the database
+## 2. Import the database
 
-open TablePlus and connect to the MySQL server
-create a new database named myapp
-import the database.dump file into this database (File -> Import -> From SQL Dump)
+- Open TablePlus and connect to the MySQL server.
+- Create a new database named `myapp`.
+- Import the `database.dump` file into this database (**File → Import → From SQL Dump**).
 
+## 3. Configure the database connection
 
-3.Configure the database connection
+Create a `config.php` file in the root directory of the project and add the code:
 
-create a config.php file in the root directory of the project and add the code:
-
+```php
 <?php
 
 return [
@@ -30,6 +30,10 @@ return [
         'password' => ''
     ]
 ];
+```
 
-4. Start the server
+## 4. Start the server
+
+```bash
 php -S localhost:8888
+```
